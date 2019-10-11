@@ -4,8 +4,12 @@ This is a template for deploying Nexus Repository Manager behind an NGINX revers
 
 ## Features
 
-- Web UI accessible via https://localhost
-- Docker Hub proxy registry accessible via https://localhost:5000
+- Web UI accessible via https://localhost:9443
+- Nexus Docker registry accessible via docker cli 
+
+```
+  docker login localhost:19443
+```
 
 ## Operations
 
