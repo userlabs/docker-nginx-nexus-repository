@@ -18,8 +18,8 @@ services:
   nginx-proxy:
     build: ./nginx
     ports:
-      - '443:443'
-      - '5000:5000'
+      - '9443:9443'
+      - '19443:19443'
     links:
       - nexus-repository
     command: [ nginx, '-g', 'daemon off;' ]
@@ -27,7 +27,5 @@ services:
   nexus-repository:
     image: sonatype/nexus3
     volumes:
-      - 'nexus-data:/nexus-data'
+      - './nexus-data:/nexus-data'
 
-volumes:
-  nexus-data:
