@@ -41,10 +41,10 @@ Note: There are a few steps you would need to access and create the docker-regis
 
 1. Access admin.password file (in directory ./nexus-data) to get the random password at the first start.
 
-2. Create a new docker repository.
+2. Create a new docker repository (hosted).
 ![Alt text](img/create_docker_repo.png?raw=true "Create a new Docker repository")
 
-3. Create privilege for the docker repository
+3. Create privilege (repository view) for the docker repository
 ![Alt text](img/create_privilege.png?raw=true "Create privilege for Docker repository")
 
 4. Create a role with the privilege or add it to an existing role. Create a user and assign the role to the user.
