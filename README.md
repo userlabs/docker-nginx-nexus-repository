@@ -39,7 +39,7 @@ The Ngnix docker image build process generates insecure SSL certificates with fa
 
 Note: There are a few steps you would need to access and create the docker-registry.
 
-1. Access admin.password file to get the random password at the first start.
+1. Access admin.password file (in directory ./nexus-data) to get the random password at the first start.
 
 2. Create a new docker repository.
 ![Alt text](img/create_docker_repo.png?raw=true "Create a new Docker repository")
